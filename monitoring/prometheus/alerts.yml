@@ -1,0 +1,12 @@
+# alerts.yml
+groups:
+  - name: event-alerts
+    rules:
+      - alert: HighEventFailureRate
+        expr: rate(producer_events_sent_total{status="failure"}[1m]) > 5
+        for: 1m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High event failure rate"
+          description: "More than 5 failed events per minute."

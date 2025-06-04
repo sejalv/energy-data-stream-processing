@@ -1,0 +1,103 @@
+{
+  "id": null,
+  "uid": "data-ops-dashboard",
+  "title": "Kafka Metrics",
+  "tags": ["consumer", "producer","prometheus"],
+  "timezone": "browser",
+  "schemaVersion": 37,
+  "version": 1,
+  "refresh": "5s",
+  "panels": [
+    {
+      "type": "stat",
+      "title": "Producer Events Sent (Success)",
+      "id": 1,
+      "gridPos": { "h": 5, "w": 8, "x": 0, "y": 0 },
+      "targets": [
+        {
+          "expr": "producer_events_sent_total{status=\"success\"}",
+          "legendFormat": "Success",
+          "refId": "A"
+        }
+      ],
+      "colorMode": "value",
+      "colors": ["green"],
+      "thresholds": {
+        "mode": "absolute",
+        "steps": [
+          { "color": "green", "value": null }
+        ]
+      }
+    },
+    {
+      "title": "Producer Events Sent (Failure)",
+      "type": "stat",
+      "id": 2,
+      "gridPos": { "h": 5, "w": 8, "x": 0, "y": 5 },
+      "targets": [
+        {
+          "expr": "producer_events_sent_total{status=\"failure\"}",
+          "legendFormat": "Failure",
+          "refId": "B"
+        }
+      ]
+    },
+    {
+      "type": "stat",
+      "title": "Consumer Events Processed (Success)",
+      "id": 3,
+      "gridPos": { "h": 5, "w": 8, "x": 8, "y": 0 },
+      "datasource": "Prometheus",
+      "targets": [
+        {
+          "expr": "events_received_total{status=\"success\"}",
+          "refId": "A"
+        }
+      ],
+      "colorMode": "value",
+      "colors": ["green"],
+      "thresholds": {
+        "mode": "absolute",
+        "steps": [
+          { "color": "green", "value": null }
+        ]
+      }
+    },
+    {
+      "type": "stat",
+      "title": "Consumer Events Processed (Failure)",
+      "id": 4,
+      "gridPos": { "h": 5, "w": 8, "x": 8, "y": 5 },
+      "datasource": "Prometheus",
+      "targets": [
+        {
+          "expr": "events_received_total{status=\"failure\"}",
+          "refId": "A"
+        }
+      ],
+      "colorMode": "value",
+      "colors": ["green", "orange", "red"],
+      "thresholds": {
+        "mode": "absolute",
+        "steps": [
+          { "color": "green", "value": null },
+          { "color": "orange", "value": 5 },
+          { "color": "red", "value": 20 }
+        ]
+      }
+    },
+    {
+      "type": "timeseries",
+      "title": "Consumer Events Processing Time (Histogram Average)",
+      "id": 5,
+      "gridPos": { "h": 5, "w": 8, "x": 16, "y": 0 },
+      "datasource": "Prometheus",
+      "targets": [
+        {
+          "expr": "rate(event_processing_seconds_sum[1m]) / rate(event_processing_seconds_count[1m])",
+          "refId": "A"
+        }
+      ]
+    }
+  ]
+}
