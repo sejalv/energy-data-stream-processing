@@ -1,61 +1,85 @@
-# Data Ops Lottery Platform - SV
+# Energy Data Stream Processing
 
-This project, as a solution to Zeal's Case Study, processes real-time user interactions with lottery games and aggregates into business metrics such as revenue, logins, payouts, and active users, on an hourly basis. 
-The pipeline includes data validation, Postgres DB for insights, and observability dashboards in Grafana, within a containerized, local setup.
+A real-time streaming pipeline that captures energy consumption and tariff-switching events via Apache Kafka, 
+stores them in PostgreSQL, and exposes business intelligence and observability dashboards through Grafana.
 
-### Assumptions
+This project forms a foundational layer of a large-scale pricing infrastructure I contributed to while 
+building experimentation platforms for Pricing teams. It can power key use-cases like dynamic pricing, 
+demand elasticity modeling, and A/B test measurement through downstream services.
 
-*	Domain = lottery platform interactions (event_types = [ "login", "view_numbers", "ticket_purchased", "claim_reward", "logout" ])
-*	One Kafka topic for all user events
-*	Aggregation = hourly by event type
-*	Consumer does both ingestion and aggregation
+## Overview
 
-### Features
+This system implements a modern data architecture for energy business analytics to:
 
-*	Kafka-based event streaming
-*	Python-based real-time event consumption & metric aggregation
-*	Automated hourly metric flushing to a Postgres database
-*	Prometheus + Grafana observability setup
-*	Test suite with pytest and mocks
-*	Fully containerized via Docker
+* Track customer energy consumption in real-time
+* Measure customer engagement and revenue across tariff-switching and other lifecycle events
 
-### Tech Stack
+### Tech
 
-*	Python 3.10
-*	Kafka
-*	PostgreSQL
-*	Prometheus
-*	Grafana
-*	Docker & Docker Compose
+* Apache Kafka: Event streaming (with sample data) for real-time ingestion
+* Python: Event producers and consumers for event processing & metric aggregation
+* PostgreSQL: Database for storing raw user events and hourly aggregated business metrics
+* Prometheus: Monitoring, alerts, and logging metrics for Kafka (producer and consumer) and application health
+* Grafana: Observability dashboards and BI visualizations
+* Docker & docker-compose: Containerized development and orchestration
+* Pytest: Unit test suite for event producer and consumer
 
-### Project Structure
+### Architecture
+
 ```
-.
-├── producer/                # Kafka producer (simulates events from an event json file)
-│   └── producer.py
-├── consumer/                # Kafka consumer with core logic to process and validate events
-│   └── consumer.py
-├── data/                    # Data Source and Error Output 
-│   └── events.jsonl         # Sample event data
-├── tests/                   # Unit tests for producer and consumer logic
-│   └── test_consumer.py
-├── monitoring/              # Unit tests for producer and consumer logic
-│   └── grafana              # Grafana dashboard config
-│           └── dashboards
-│                   └── dashboard.json      # Metrics dashboard config
-│           └── provisioning
-│   └── prometheus           # Prometheus config for logs and alerts
-├── docker-compose.yml       # For a fully-containerized setup and execution
-├── Dockerfile               # Python app
-├── requirements.txt         
-└── README.md
+   +--------------------+            +----------------+
+   |  Event Producer    |  ------>   |     Kafka      |
+   |    (events.jsonl)  |            | (producer.py)  |
+   +--------------------+            +----------------+
+                                         ||
+                                         \/
+                               +--------------------------------------------+
+                               |    Kafka Consumer                          |
+                               |  (consumer.py: aggregator + writer)        |
+                               +--------------------------------------------+
+                               | - ingest_raw_batch() -> events_db.events   |
+                               | - process_event() -> flush_business_metrics |
+                               |    ->  events_db.hourly_business_metrics   |
+                               +--------------------------------------------+
+                                         ||
+                                         \/
+                     +-----------------------------------------------+
+                     |     Prometheus + Grafana                      |
+                     | - BI Dashboard: Energy Business Metrics       |
+                     | - Observability Dashboard: Kafka & DB Metrics |
+                     +-----------------------------------------------+
+   
 ```
+
+### BI Dashboards
+
+* Business KPIs: Total switches, consumption, revenue, and growth metrics
+* Revenue Overview: Daily revenue trends and patterns
+* Customer Engagement Funnel: Conversion rates from active users to payments
+* Channel Performance: Multi-channel revenue and customer analysis
+* Green Energy Adoption: Cumulative tracking of sustainable energy switches
+* Demand Elasticity Analysis: Price sensitivity and demand change patterns
+* Dynamic Pricing Insights: Optimal pricing window identification
+* Peak Load Management: Energy consumption heatmaps
+* A/B Testing Framework: Customer segment analysis and experimentation
+
+* ![dashboard-snapshot.png](./dashboard-snapshot.png)
+
+### Observability Dashboards
+
+* System Health Monitoring & Metrics (eg. Number of processed events, failed db writes etc.)
 
 ## Execution
+
+### Prerequisites
+
+* Python 3.10, Pytest
+* Docker and Docker Compose
+
 1. Setup:
 ```bash
 git clone <your-repo-url>
-cd data-ops-lottery-platform-sv
+cd energy-data-stream-processing
 
 python -m venv .venv
 source .venv/bin/activate
@@ -63,6 +87,8 @@ pip install -r requirements.txt
 ```
 
 2. Run tests:
+
+6 tests pass in each-
 ```bash
 PYTHONPATH=producer pytest -sv tests/test_producer.py
 
@@ -77,47 +103,94 @@ docker-compose up --build
 4. Observability Dashboards:
 
 *	Prometheus: http://localhost:9090
-*	Grafana: http://localhost:3000 (Default login: admin / admin)
+*	Grafana: http://localhost:3000 (Default login: `admin/admin`, and then skip password change)
+  * Energy Business Metrics: http://localhost:3000/d/energy-business-metrics/energy-business-metrics
+  * Kafka & DB Metrics: http://localhost:3000/d/data-ops-dashboard/kafka-and-db-metrics
 
-5. Business Metrics
-* Total revenue from ticket purchases
-* Total payouts from rewards
-* Count of ticket purchases and rewards per hour
-* Number of logins, unique users, and new sessions
+
+## Project Details
+
+### Project Structure
+```
+.
+├── producer/                # Kafka producer (simulates events from an event json file)
+│   └── producer.py
+├── consumer/                # Kafka consumer with core logic to process and validate events
+│   └── consumer.py
+├── data/                    # Data Source and Error Output 
+│   └── events.jsonl         # Sample event data
+├── tests/                   # Unit tests for producer and consumer logic
+│   └── test_consumer.py
+├── monitoring/              # Monitoring setup (Grafana + Prometheus)
+│   └── grafana              # Grafana dashboard config
+│           └── dashboards
+│                   └── dashboard.json      # Metrics dashboard config
+│           └── provisioning
+│   └── prometheus           # Prometheus config for logs and alerts
+├── docker-compose.yml       # For a fully-containerized setup and execution
+├── Dockerfile               # Python app
+├── requirements.txt         
+└── README.md
+```
+
+### Design Considerations
+* One Kafka topic for all user-energy events (at prototype level)
+* Consumer handles event processing, metric aggregation, and flushing to database
+  * With a single-thread processor (at prototype level)
+* Aggregation = hourly by event type
+
+### Data sources
+
+**Event Types**
+
+* user_login: Customer authentication events
+* view_tariffs: Tariff browsing behavior 
+* tariff_switch: Tariff change events with revenue impact 
+* energy_consumed: Energy consumption measurements 
+* incentive_claim: Green energy incentive claims
+* bill_payment: Payment processing events
+
+### Data Models: Tables and views
+
+* `events`: Raw event data with customer, channel, and business context
+* `hourly_business_metrics`: Aggregated business KPIs by hour
+* `customer_view`: Customer profile and segmentation data
+* `rolling_24h_metrics`: view
+* `daily_event_summary`: view
+
 ```
 psql -h localhost -p 5432 -U user -d events_db
 [user: password]
-select * from events;
-select * from hourly_business_metrics;
-select * from rolling_24h_metrics;
-select * from daily_event_summary;
+select * from ...;
 ```
 
-## Flow Diagram
-```
-   +------------------+            +----------------+
-   |  Event Producer  |  ------>   |     Kafka      |
-   | (lottery events) |            | user-events    |
-   +------------------+            +----------------+
-                                         ||
-                                         \/
-                               +----------------------+
-                               |    Kafka Consumer     |
-                               |  (aggregator + writer)|
-                               +----------------------+
-                               | - Writes to Postgres |
-                               | - Exposes metrics    |
-                               +----------------------+
-                                         ||
-                                         \/
-                     +----------------------------+
-                     |     Prometheus + Grafana    |
-                     | - Metrics, Alerts, Dashboards|
-                     +----------------------------+
-   
+### Troubleshooting
+
+**Check running containers and logs**
+```bash
+docker ps -a
+docker-compose logs [container]
 ```
 
-## Future Enhancements
-* IaC and CI/CD workflows
+**Notes**
+
+* Wait for a few seconds for the producer and consumer to start generating logs, from docker
+* While the metrics dashboards are updated in real-time, a lag of few records is to be expected
+* The BI dashboard is for representation purposes, and does not guarantee complete accuracy given the sample data
+
+
+**Final Logs (Producer)**
+```bash
+producer-1    | 2025-06-10 03:15:24,679 [INFO] Sent: {'event_type': ..., 'payload': ...}
+consumer-1    | 2025-06-10 03:15:24,683 [INFO] Listening to: {'event_type': ..., 'payload': ...}
+producer-1    | 2025-06-10 03:15:25,377 [INFO] Finished sending events.
+producer-1    | 2025-06-10 03:15:25,378 [INFO] Waiting for final metrics to be scraped...
+producer-1 exited with code 0
+consumer-1    | 2025-06-10 03:15:48,227 [INFO] Flushed metrics for 10 hours, cleaned up 10 old entries
+```
+
+### Future Enhancements
+* Add CI workflows for linting, testing, and image validation (e.g., GitHub Actions)
+* Introduce async architecture and Kafka schema registry to scale architecture
+* Infrastructure-as-code and deployment workflows
 * Improved validation with tools like pydantic
-* Improved observability metrics for stream latency, eg. Prometheus gauge to show lag between event_timestamp and now() to measure freshness.
