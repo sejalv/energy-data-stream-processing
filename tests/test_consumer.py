@@ -1,70 +1,91 @@
 import pytest
+from consumer import validate_event, validate_numeric_field, process_event, HourlyStats, business_stats
 from datetime import datetime
-from consumer import validate_event, process_event, flush_business_metrics, HourlyStats
-from unittest.mock import MagicMock
 from collections import defaultdict
+import threading
 
 @pytest.fixture
-def valid_event():
+def sample_valid_event():
     return {
-        "event_type": "ticket_purchased",
-        "event_time": "2025-06-02T12:34:56Z",
+        "event_type": "tariff_switch",
+        "event_time": "2025-06-04T12:00:00Z",
         "payload": {
-            "user_id": "user123",
-            "session_id": 456,
-            "amount": 50.0
+            "customer_id": "cust123",
+            "session_id": "101",
+            "channel": "web",
+            "tariff_type": "green",
+            "payment_amount": "20.5"
         }
     }
 
 @pytest.fixture
-def business_stats():
-    return defaultdict(HourlyStats)
-
-
-def test_validate_event_valid(valid_event):
-    assert validate_event(valid_event) is True
-
-def test_validate_event_missing_payload_fields():
-    event = {
-        "event_type": "login",
-        "event_time": "2025-06-02T10:00:00Z",
+def sample_invalid_event():
+    return {
+        "event_type": "tariff_switch",
+        "event_time": "invalid-date",
         "payload": {
-            "user_id": "abc"
+            "customer_id": "cust123",
+            "session_id": "101",
+            "channel": "web",
         }
     }
-    assert validate_event(event) is False
 
-def test_process_claim_reward(business_stats):
-    event = {
-        "event_type": "claim_reward",
-        "event_time": "2025-06-02T14:10:00Z",
-        "payload": {
-            "user_id": "userX",
-            "session_id": 123,
-            "amount": 20.0
-        }
-    }
-    process_event(event, business_stats)
-    hour = datetime.fromisoformat("2025-06-02T14:00:00+00:00")
+def test_validate_event_valid(sample_valid_event):
+    is_valid, reason = validate_event(sample_valid_event)
+    assert is_valid
+    assert reason == ""
+
+def test_validate_event_invalid_time(sample_invalid_event):
+    is_valid, reason = validate_event(sample_invalid_event)
+    assert not is_valid
+    assert "Invalid event_time format" in reason
+
+def test_validate_event_missing_fields(sample_invalid_event):
+    sample_invalid_event["event_time"] = "2025-06-04T12:00:00Z"  # Fix time
+    is_valid, reason = validate_event(sample_invalid_event)
+    assert not is_valid
+    assert "Missing payload fields" in reason
+
+def test_validate_numeric_field_negative():
+    valid, val = validate_numeric_field("-5.5")
+    assert not valid
+    assert val == 0.0
+
+def test_process_event_tariff_switch(sample_valid_event):
+    business_stats.clear()  # Reset shared state
+    event = sample_valid_event
+    process_event(event)
+    hour = datetime.fromisoformat(event["event_time"].replace("Z", "+00:00")).replace(minute=0, second=0, microsecond=0)
     stats = business_stats[hour]
-    assert stats.total_payouts == 20.0
-    assert stats.payout_events == 1
+    assert stats.tariff_switches == 1
+    assert stats.total_switch_revenue == 20.5
+    assert stats.green_tariff_switches == 1
+    assert "cust123" in stats.active_customers
 
-def test_flush_business_metrics_writes_to_db():
-    stats = HourlyStats()
-    stats.total_revenue = 100
-    stats.ticket_count = 2
-    stats.total_payouts = 50
-    stats.payout_events = 1
-    stats.active_users = {"u1", "u2"}
-    stats.new_sessions = {"s1"}
-    stats.total_logins = 5
-
-    hour = datetime(2025, 6, 2, 10, 0, 0)
-    business_stats = {hour: stats}
-
-    cursor = MagicMock()
-    flush_business_metrics(cursor, business_stats)
-
-    assert cursor.execute.called
-    # assert business_stats == {}
+def test_process_multiple_events_same_customer():
+    business_stats.clear()
+    event1 = {
+        "event_type": "user_login",
+        "event_time": "2025-06-04T10:00:00Z",
+        "payload": {
+            "customer_id": "cust456",
+            "session_id": "201",
+            "channel": "app"
+        }
+    }
+    event2 = {
+        "event_type": "user_login",
+        "event_time": "2025-06-04T10:15:00Z",
+        "payload": {
+            "customer_id": "cust456",
+            "session_id": "202",
+            "channel": "web"
+        }
+    }
+    process_event(event1)
+    process_event(event2)
+    hour = datetime.fromisoformat("2025-06-04T10:00:00+00:00")
+    stats = business_stats[hour]
+    assert stats.total_logins == 2
+    assert len(stats.new_sessions) == 2
+    assert "cust456" in stats.active_customers

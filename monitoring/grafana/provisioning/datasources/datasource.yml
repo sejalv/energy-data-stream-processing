@@ -6,3 +6,21 @@ datasources:
     orgId: 1
     url: http://prometheus:9090
     isDefault: true
+  - name: PostgreSQL
+    type: postgres
+    access: proxy
+    url: postgres:5432
+    database: events_db
+    user: user
+    secureJsonData:
+      password: password
+    jsonData:
+      sslmode: disable
+      maxOpenConns: 100
+      maxIdleConns: 100
+      maxIdleConnsAuto: true
+      connMaxLifetime: 14400
+      postgresVersion: 1400
+      timescaledb: false
+    isDefault: false
+    editable: true

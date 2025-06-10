@@ -1,125 +1,220 @@
-{"event_type": "logout", "event_time": "2025-06-01T15:14:00", "payload": {"user_id": "user_13", "session_id": 1364}}
-{"event_type": "logout", "event_time": "2025-06-01T10:00:00", "payload": {"user_id": "user_12", "session_id": 6818}}
-{"event_type": "view_numbers", "event_time": "2025-06-01T10:47:00", "payload": {"user_id": "user_15", "session_id": 8797}}
-{"event_type": "claim_reward", "event_time": "2025-06-01T13:58:00", "payload": {"user_id": "user_9", "session_id": 1085, "amount": 64.97}}
-{"event_type": "claim_reward", "event_time": "2025-06-01T10:41:00", "payload": {"user_id": "user_14", "session_id": 9615, "amount": 6.66}}
-not a json line at all
-{"event_type": "logout", "event_time": "2025-06-01T10:23:00", "payload": {"user_id": "user_1", "session_id": 8616}}
-{"event_type": "logout", "event_time": "2025-06-01T13:31:00", "payload": {"user_id": "user_20", "session_id": 9790}}
-{"event_type": "logout", "event_time": "2025-06-01T15:24:00", "payload": {"user_id": "user_16", "session_id": 7536}}
-{"event_type": "logout", "event_time": "2025-06-01T11:40:00", "payload": {"user_id": "user_3", "session_id": 3535}}
-{"event_type": "ticket_purchased", "event_time": "2025-06-01T14:24:00", "payload": {"user_id": "user_14", "session_id": 8012, "amount": 78.05}}
-{"event_type": "ticket_purchased", "event_time": "2025-06-01T14:01:00", "payload": {"user_id": "user_2", "session_id": 2702, "amount": 71.14}}
-{"event_type": "login", "event_time": "2025-06-01T13:12:00", "payload": {"user_id": "user_17", "session_id": 6520}}
-{"event_type": "view_numbers", "event_time": "2025-06-01T10:45:00", "payload": {"user_id": "user_10", "session_id": 6480}}
-{"event_type": "view_numbers", "event_time": "2025-06-01T11:08:00", "payload": {"user_id": "user_6", "session_id": 4340}}
-{"event_type": "view_numbers", "event_time": "2025-06-01T15:23:00", "payload": {"user_id": "user_1", "session_id": 2032}}
-{"event_type": "login", "event_time": "2025-06-01T11:27:00", "payload": {"user_id": "user_17", "session_id": 7627}}
-{"event_type": "login", "event_time": "2025-06-01T12:38:00", "payload": {"user_id": "user_8", "session_id": 8817}}
-{"event_type": "ticket_purchased", "event_time": "2025-06-01T11:13:00", "payload": {"user_id": "user_16", "session_id": 1550, "amount": 46.34}}
-{"event_type": "view_numbers", "event_time": "2025-06-01T11:29:00", "payload": {"user_id": "user_6", "session_id": 3252}}
-{"event_type": "ticket_purchased", "event_time": "2025-06-01T14:20:00", "payload": {"user_id": "user_17", "session_id": 5050, "amount": 26.33}}
-{"event_type": "login", "event_time": "2025-06-01T12:23:00", "payload": {"user_id": "user_3", "session_id": 2400}}
-{"event_type": "ticket_purchased", "event_time": "2025-06-01T10:07:00", "payload": {"user_id": "user_4", "session_id": 4415, "amount": 45.7}}
-{"event_type": "view_numbers", "event_time": "2025-06-01T10:01:00", "payload": {"user_id": "user_7", "session_id": 5588}}
-{"event_type": "ticket_purchased", "event_time": "bad-date", "payload": {"user_id": "user_X", "amount": "NaN"}}
-{"event_type": "logout", "event_time": "2025-06-01T13:27:00", "payload": {"user_id": "user_5", "session_id": 6277}}
-{"event_type": "ticket_purchased", "event_time": "2025-06-01T13:59:00", "payload": {"user_id": "user_9", "session_id": 2641, "amount": 77.47}}
-{"event_type": "logout", "event_time": "2025-06-01T13:58:00", "payload": {"user_id": "user_11", "session_id": 1249}}
-{"event_type": "ticket_purchased", "event_time": "2025-06-01T13:36:00", "payload": {"user_id": "user_16", "session_id": 9094, "amount": 36.36}}
-{"event_type": "claim_reward", "event_time": "2025-06-01T13:28:00", "payload": {"user_id": "user_7", "session_id": 4517, "amount": 61.18}}
-{"event_type": "view_numbers", "event_time": "2025-06-01T15:53:00", "payload": {"user_id": "user_7", "session_id": 1424}}
-{"event_type": "logout", "event_time": "2025-06-01T10:58:00", "payload": {"user_id": "user_19", "session_id": 3937}}
-{"event_type": "claim_reward", "event_time": "2025-06-01T14:30:00", "payload": {"user_id": "user_12", "session_id": 9482, "amount": 85.0}}
-{"event_type": "claim_reward", "event_time": "2025-06-01T11:31:00", "payload": {"user_id": "user_15", "session_id": 5030, "amount": 38.88}}
-{"event_type": "ticket_purchased", "event_time": "2025-06-01T12:08:00", "payload": {"user_id": "user_19", "session_id": 1927, "amount": 64.11}}
-{"event_type": "view_numbers", "event_time": "2025-06-01T10:45:00", "payload": {"user_id": "user_11", "session_id": 7436}}
-{"event_type": "logout", "event_time": "2025-06-01T11:32:00", "payload": {"user_id": "user_5", "session_id": 5618}}
-{"event_type": "login", "event_time": "2025-06-01T12:42:00", "payload": {"user_id": "user_5", "session_id": 6781}}
-{"event_type": "", "event_time": "", "payload": {"user_id": "user_X"}}
-{"event_type": "login", "event_time": "2025-06-01T12:32:00", "payload": {"user_id": "user_4", "session_id": 1126}}
-{"event_type": "ticket_purchased", "event_time": "2025-06-01T11:56:00", "payload": {"user_id": "user_2", "session_id": 1741, "amount": 57.25}}
-{"event_type": "claim_reward", "event_time": "2025-06-01T11:28:00", "payload": {"user_id": "user_9", "session_id": 8099, "amount": 23.11}}
-{"event_type": "view_numbers", "event_time": "2025-06-01T12:21:00", "payload": {"user_id": "user_5", "session_id": 8181}}
-{"event_type": "logout", "event_time": "2025-06-01T15:47:00", "payload": {"user_id": "user_20", "session_id": 9240}}
-{"event_type": "logout", "event_time": "2025-06-01T14:23:00", "payload": {"user_id": "user_13", "session_id": 3367}}
-{"event_type": "logout", "event_time": "2025-06-01T12:22:00", "payload": {"user_id": "user_13", "session_id": 8349}}
-{"event_type": "logout", "event_time": "2025-06-01T12:52:00", "payload": {"user_id": "user_19", "session_id": 9508}}
-{"event_type": "logout", "event_time": "2025-06-01T12:11:00", "payload": {"user_id": "user_1", "session_id": 5631}}
-{"event_type": "view_numbers", "event_time": "2025-06-01T10:26:00", "payload": {"user_id": "user_12", "session_id": 8018}}
-{"event_type": "ticket_purchased", "event_time": "2025-06-01T14:18:00", "payload": {"user_id": "user_2", "session_id": 1571, "amount": 21.22}}
-{"event_type": "logout", "event_time": "2025-06-01T12:26:00", "payload": {"user_id": "user_7", "session_id": 5698}}
-{"event_type": "claim_reward", "event_time": "2025-06-01T14:50:00", "payload": {"user_id": "user_3", "session_id": 1319, "amount": 87.3}}
-{"event_type": "ticket_purchased", "event_time": "2025-06-01T14:28:00", "payload": {"user_id": "user_1", "session_id": 1996, "amount": 84.54}}
-{"event_type": "ticket_purchased", "event_time": "2025-06-01T10:49:00", "payload": {"user_id": "user_20", "session_id": 7849, "amount": 64.46}}
-{"event_type": "login", "event_time": "2025-06-01T14:11:00", "payload": {"user_id": "user_18", "session_id": 3310}}
-{"event_type": "logout", "event_time": "2025-06-01T10:40:00", "payload": {"user_id": "user_12", "session_id": 6014}}
-{"event_type": "ticket_purchased", "event_time": "2025-06-01T13:33:00", "payload": {"user_id": "user_9", "session_id": 2538, "amount": 94.49}}
-{"event_type": "login", "event_time": "2025-06-01T14:47:00", "payload": {"user_id": "user_13", "session_id": 1954}}
-{"event_type": "logout", "event_time": "2025-06-01T13:00:00", "payload": {"user_id": "user_15", "session_id": 4720}}
-{"event_type": "ticket_purchased", "event_time": "2025-06-01T14:25:00", "payload": {"user_id": "user_9", "session_id": 3478, "amount": 90.76}}
-{"event_type": "view_numbers", "event_time": "2025-06-01T15:56:00", "payload": {"user_id": "user_2", "session_id": 7392}}
-{"event_type": "view_numbers", "event_time": "2025-06-01T11:41:00", "payload": {"user_id": "user_9", "session_id": 7323}}
-{"event_type": "login", "event_time": "2025-06-01T13:38:00", "payload": {"user_id": "user_18", "session_id": 3942}}
-{"event_type": "claim_reward", "event_time": "2025-06-01T13:17:00", "payload": {"user_id": "user_15", "session_id": 9848, "amount": 95.47}}
-{"event_type": "claim_reward", "event_time": "2025-06-01T15:09:00", "payload": {"user_id": "user_16", "session_id": 9715, "amount": 69.3}}
-{"event_type": "login", "event_time": "2025-06-01T11:31:00", "payload": {"user_id": "user_9", "session_id": 6043}}
-{"event_type": "ticket_purchased", "event_time": "2025-06-01T11:17:00", "payload": {"user_id": "user_16", "session_id": 5743, "amount": 28.28}}
-{"event_type": "view_numbers", "event_time": "2025-06-01T11:17:00", "payload": {"user_id": "user_20", "session_id": 3477}}
-{"event_type": "view_numbers", "event_time": "2025-06-01T12:14:00", "payload": {"user_id": "user_12", "session_id": 5242}}
-{"event_type": "ticket_purchased", "event_time": "2025-06-01T14:28:00", "payload": {"user_id": "user_19", "session_id": 8309, "amount": 4.28}}
-{"event_type": "ticket_purchased", "event_time": "2025-06-01T10:29:00", "payload": {"user_id": "user_9", "session_id": 5532, "amount": 5.87}}
-{"event_type": "logout", "event_time": "2025-06-01T11:05:00", "payload": {"user_id": "user_15", "session_id": 9885}}
-{"event_type": "view_numbers", "event_time": "2025-06-01T10:13:00", "payload": {"user_id": "user_3", "session_id": 3972}}
-{"event_type": "login", "event_time": "2025-06-01T15:57:00", "payload": {"user_id": "user_16", "session_id": 5532}}
-{"event_type": "claim_reward", "event_time": "2025-06-01T14:17:00", "payload": {"user_id": "user_15", "session_id": 3362, "amount": 98.3}}
-{"event_type": "ticket_purchased", "event_time": "2025-06-01T12:04:00", "payload": {"user_id": "user_4", "session_id": 2461, "amount": 19.1}}
-{"event_type": "claim_reward", "event_time": "2025-06-01T13:46:00", "payload": {"user_id": "user_2", "session_id": 6693, "amount": 45.61}}
-{"event_type": "logout", "event_time": "", "payload": {"user_id": "user_3"}}
-{"event_type": "logout", "event_time": "2025-06-01T10:14:00", "payload": {"user_id": "user_17", "session_id": 2164}}
-{"event_type": "logout", "event_time": "2025-06-01T15:33:00", "payload": {"user_id": "user_8", "session_id": 6128}}
-{"event_type": "login", "event_time": "2025-06-01T14:28:00", "payload": {"user_id": "user_12", "session_id": 8319}}
-{"event_type": "ticket_purchased", "event_time": "2025-06-01T12:30:00", "payload": {"user_id": "user_13", "session_id": 4101, "amount": 60.71}}
-{"event_type": "view_numbers", "event_time": "2025-06-01T13:58:00", "payload": {"user_id": "user_9", "session_id": 1807}}
-{"event_type": "ticket_purchased", "event_time": "2025-06-01T13:54:00", "payload": {"user_id": "user_11", "session_id": 3382, "amount": 93.59}}
-{"event_type": "claim_reward", "event_time": "2025-06-01T12:58:00", "payload": {"user_id": "user_2", "session_id": 1476, "amount": 37.22}}
-{"event_type": "login", "event_time": "2025-06-01T12:04:00", "payload": {"user_id": "user_2", "session_id": 1073}}
-{"event_type": "login", "event_time": "2025-06-01T12:02:00", "payload": {"user_id": "user_10", "session_id": 8941}}
-{"event_type": "logout", "event_time": "2025-06-01T15:41:00", "payload": {"user_id": "user_16", "session_id": 9323}}
-{"event_type": "login", "event_time": "2025-06-01T12:11:00", "payload": {"user_id": "user_4", "session_id": 2101}}
-{"event_type": "claim_reward", "event_time": "2025-06-01T15:16:00", "payload": {"user_id": "user_20", "session_id": 3158, "amount": 76.97}}
-{"event_type": "view_numbers", "event_time": "2025-06-01T15:46:00", "payload": {"user_id": "user_1", "session_id": 2332}}
-{"event_type": "logout", "event_time": "2025-06-01T10:46:00", "payload": {"user_id": "user_6", "session_id": 9066}}
-{"event_type": "view_numbers", "event_time": "2025-06-01T11:28:00", "payload": {"user_id": "user_18", "session_id": 3474}}
-{"event_type": "claim_reward", "event_time": "2025-06-01T13:32:00", "payload": {"user_id": "user_5", "session_id": 4050, "amount": 80.15}}
-{"event_type": "claim_reward", "event_time": "2025-06-01T11:49:00", "payload": {"user_id": "user_18", "session_id": 1328, "amount": 59.42}}
-{"event_type": "view_numbers", "event_time": "2025-06-01T10:43:00", "payload": {"user_id": "user_13", "session_id": 1345}}
-{"event_type": "view_numbers", "event_time": "2025-06-01T11:06:00", "payload": {"user_id": "user_12", "session_id": 2039}}
-{"event_type": "view_numbers", "event_time": "2025-06-01T10:06:00", "payload": {"user_id": "user_2", "session_id": 1349}}
-{"event_type": "logout", "event_time": "2025-06-01T12:40:00", "payload": {"user_id": "user_3", "session_id": 9931}}
-{"event_type": "login", "event_time": "2025-06-01T13:23:00", "payload": {"user_id": "user_12", "session_id": 2476}}
-{"event_type": "login", "event_time": "2025-06-01T10:27:00", "payload": {"user_id": "user_14", "session_id": 9843}}
-{"event_type": "login", "event_time": "2025-06-01T10:21:00", "payload": {"user_id": "user_14", "session_id": 9464}}
-{"event_type": "login", "event_time": "2025-06-01T13:00:00Z", "payload": {}}
-{"event_type": "logout", "event_time": "2025-06-01T15:15:00", "payload": {"user_id": "user_12", "session_id": 6471}}
-{"event_type": "ticket_purchased", "event_time": "2025-06-01T13:44:00", "payload": {"user_id": "user_15", "session_id": 8976, "amount": 62.4}}
-{"event_type": "logout", "event_time": "2025-06-01T15:56:00", "payload": {"user_id": "user_10", "session_id": 7262}}
-{"event_type": "logout", "event_time": "2025-06-01T10:17:00", "payload": {"user_id": "user_4", "session_id": 4994}}
-{"event_type": "view_numbers", "event_time": "2025-06-01T15:42:00", "payload": {"user_id": "user_2", "session_id": 5907}}
-{"event_type": "logout", "event_time": "2025-06-01T12:18:00", "payload": {"user_id": "user_1", "session_id": 5277}}
-{"event_type": "view_numbers", "event_time": "2025-06-01T13:33:00", "payload": {"user_id": "user_8", "session_id": 5397}}
-{"event_type": "view_numbers", "event_time": "2025-06-01T13:10:00", "payload": {"user_id": "user_17", "session_id": 3831}}
-{"event_type": "ticket_purchased", "event_time": "2025-06-01T12:15:00", "payload": {"user_id": "user_8", "session_id": 8134, "amount": 66.49}}
-{"event_type": "view_numbers", "event_time": "2025-06-01T11:06:00", "payload": {"user_id": "user_1", "session_id": 5850}}
-{"event_type": "ticket_purchased", "event_time": "2025-06-01T12:14:00", "payload": {"user_id": "user_15", "session_id": 3451, "amount": 52.95}}
-{"event_type": "logout", "event_time": "2025-06-01T10:09:00", "payload": {"user_id": "user_1", "session_id": 6975}}
-{"event_type": "view_numbers", "event_time": "2025-06-01T13:40:00", "payload": {"user_id": "user_16", "session_id": 1179}}
-{"event_type": "login", "event_time": "2025-06-01T13:00:00", "payload": {"user_id": "user_18", "session_id": 5604}}
-{"event_type": "ticket_purchased", "event_time": "2025-06-01T13:09:00", "payload": {"user_id": "user_11", "session_id": 5849, "amount": 73.18}}
-{"event_type": "logout", "event_time": "2025-06-01T15:58:00", "payload": {"user_id": "user_20", "session_id": 2890}}
-{"event_type": "ticket_purchased", "event_time": "2025-06-01T13:32:00", "payload": {"user_id": "user_19", "session_id": 2766, "amount": 59.18}}
-{"event_type": "claim_reward", "event_time": "2025-06-01T12:37:00", "payload": {"user_id": "user_3", "session_id": 3699, "amount": 35.09}}
-{"event_type": "view_numbers", "event_time": "2025-06-01T14:49:00", "payload": {"user_id": "user_2", "session_id": 3231}}
-{"event_type": "claim_reward", "event_time": "2025-06-01T12:56:00", "payload": {"user_id": "user_3", "session_id": 7793, "amount": 44.41}}
-{"event_type": "ticket_purchased", "event_time": "2025-06-01T14:24:00", "payload": {"user_id": "user_17", "session_id": 8609, "amount": 91.27}}
-{"event_type": "logout", "event_time": "2025-06-01T12:22:00", "payload": {"user_id": "user_1", "session_id": 6163}}
+{"event_type": "view_tariffs", "event_time": "2025-06-01T02:04:33.033906", "payload": {"customer_id": "CUST0023", "session_id": 3703, "channel": "web_portal", "tariff_type": "basic"}}
+{"event_type": "user_login", "event_time": "2025-06-01T23:18:33.033906", "payload": {"customer_id": "CUST0026", "session_id": 3438, "channel": "web_portal"}}
+{"event_type": "tariff_switch", "event_time": "2025-05-30T14:58:33.033906", "payload": {"customer_id": "CUST0019", "session_id": 1004, "channel": "web_portal", "tariff_type": "green"}}
+{"event_type": "user_logout", "event_time": "2025-05-31T21:53:33.033906", "payload": {"customer_id": "CUST0005", "session_id": 2511, "channel": "call_center"}}
+{"event_type": "user_logout", "event_time": "2025-06-05T02:00:33.033906", "payload": {"customer_id": "CUST0020", "session_id": 3742, "channel": "web_portal"}}
+{"event_type": "view_tariffs", "event_time": "2025-06-05T20:22:33.033906", "payload": {"customer_id": "CUST0038", "session_id": 3355, "channel": "web_portal", "tariff_type": "premium"}}
+{"event_type": "view_tariffs", "event_time": "2025-06-03T09:23:33.033906", "payload": {"customer_id": "CUST0015", "session_id": 4254, "channel": "mobile_app", "tariff_type": "green"}}
+{"event_type": "energy_consumed", "event_time": "2025-06-05T11:53:33.033906", "payload": {"customer_id": "CUST0008", "session_id": 2480, "channel": "mobile_app", "energy_consumed": 41.787}}
+{"event_type": "user_login", "event_time": "2025-06-04T06:29:33.033906", "payload": {"customer_id": "CUST0004", "session_id": 1959, "channel": "call_center"}}
+{"event_type": "energy_consumed", "event_time": "2025-05-29T23:47:33.033906", "payload": {"customer_id": "CUST0049", "session_id": 3755, "channel": "web_portal", "energy_consumed": 27.737}}
+{"event_type": "incentive_claim", "event_time": "2025-05-29T23:32:33.033906", "payload": {"customer_id": "CUST0037", "session_id": 2710, "channel": "web_portal", "tariff_type": "green"}}
+{"event_type": "view_tariffs", "event_time": "2025-06-02T17:54:33.033906", "payload": {"customer_id": "CUST0018", "session_id": 4026, "channel": "mobile_app", "tariff_type": "basic"}}
+{"event_type": "incentive_claim", "event_time": "2025-05-31T05:43:33.033906", "payload": {"customer_id": "CUST0003", "session_id": 4778, "channel": "web_portal", "tariff_type": "green"}}
+{"event_type": "view_tariffs", "event_time": "2025-06-01T02:00:33.033906", "payload": {"customer_id": "CUST0017", "session_id": 1778, "channel": "mobile_app", "tariff_type": "premium"}}
+{"event_type": "bill_payment", "event_time": "2025-06-03T10:58:33.033906", "payload": {"customer_id": "CUST0039", "session_id": 2018, "channel": "call_center", "payment_amount": 100.3}}
+{"event_type": "energy_consumed", "event_time": "2025-05-31T16:08:33.033906", "payload": {"customer_id": "CUST0009", "session_id": 4558, "channel": "mobile_app", "energy_consumed": 17.088}}
+{"event_type": "user_logout", "event_time": "2025-06-02T12:40:33.033906", "payload": {"customer_id": "CUST0013", "session_id": 1912, "channel": "web_portal"}}
+{"event_type": "tariff_switch", "event_time": "2025-06-01T20:24:33.033906", "payload": {"customer_id": "CUST0048", "session_id": 1377, "channel": "mobile_app", "tariff_type": "green"}}
+{"event_type": "bill_payment", "event_time": "2025-06-04T21:23:33.033906", "payload": {"customer_id": "CUST0033", "session_id": 4440, "channel": "call_center", "payment_amount": 196.74}}
+{"event_type": "tariff_switch", "event_time": "2025-06-05T10:42:33.033906", "payload": {"customer_id": "CUST0008", "session_id": 1198, "channel": "web_portal", "tariff_type": "premium"}}
+{"event_type": "energy_consumed", "event_time": "2025-06-04T22:19:33.033906", "payload": {"customer_id": "CUST0010", "session_id": 4725, "channel": "mobile_app", "energy_consumed": 42.706}}
+{"event_type": "energy_consumed", "event_time": "2025-05-31T09:04:33.033906", "payload": {"customer_id": "CUST0048", "session_id": 4124, "channel": "web_portal", "energy_consumed": 26.232}}
+{"event_type": "tariff_switch", "event_time": "2025-06-04T22:08:33.033906", "payload": {"customer_id": "CUST0048", "session_id": 1111, "channel": "web_portal", "tariff_type": "basic"}}
+{"event_type": "user_login", "event_time": "2025-06-04T20:30:33.033906", "payload": {"customer_id": "CUST0005", "session_id": 4286, "channel": "call_center"}}
+{"event_type": "tariff_switch", "event_time": "2025-06-04T23:38:33.033906", "payload": {"customer_id": "CUST0025", "session_id": 2571, "channel": "call_center", "tariff_type": "basic"}}
+{"event_type": "view_tariffs", "event_time": "2025-06-05T14:24:33.033906", "payload": {"customer_id": "CUST0039", "session_id": 2037, "channel": "web_portal", "tariff_type": "premium"}}
+{"event_type": "view_tariffs", "event_time": "2025-06-05T08:23:33.033906", "payload": {"customer_id": "CUST0020", "session_id": 1058, "channel": "web_portal", "tariff_type": "green"}}
+{"event_type": "view_tariffs", "event_time": "2025-06-04T02:39:33.033906", "payload": {"customer_id": "CUST0002", "session_id": 2814, "channel": "mobile_app", "tariff_type": "green"}}
+{"event_type": "user_login", "event_time": "2025-06-02T21:17:33.033906", "payload": {"customer_id": "CUST0021", "session_id": 4718, "channel": "web_portal"}}
+{"event_type": "bill_payment", "event_time": "2025-06-05T17:22:33.033906", "payload": {"customer_id": "CUST0049", "session_id": 2921, "channel": "mobile_app", "payment_amount": 98.15}}
+{"event_type": "incentive_claim", "event_time": "2025-06-01T05:23:33.033906", "payload": {"customer_id": "CUST0036", "session_id": 1592, "channel": "call_center", "tariff_type": "green"}}
+{"event_type": "view_tariffs", "event_time": "2025-05-31T12:53:33.033906", "payload": {"customer_id": "CUST0024", "session_id": 1148, "channel": "mobile_app", "tariff_type": "green"}}
+{"event_type": "user_login", "event_time": "2025-05-30T07:09:33.033906", "payload": {"customer_id": "CUST0050", "session_id": 2888, "channel": "web_portal"}}
+{"event_type": "incentive_claim", "event_time": "2025-06-04T09:52:33.033906", "payload": {"customer_id": "CUST0007", "session_id": 2713, "channel": "mobile_app", "tariff_type": "green"}}
+{"event_type": "bill_payment", "event_time": "2025-05-31T17:58:33.033906", "payload": {"customer_id": "CUST0009", "session_id": 1350, "channel": "web_portal", "payment_amount": 84.25}}
+{"event_type": "tariff_switch", "event_time": "2025-05-31T12:35:33.033906", "payload": {"customer_id": "CUST0015", "session_id": 1073, "channel": "web_portal", "tariff_type": "basic"}}
+{"event_type": "bill_payment", "event_time": "2025-05-31T22:02:33.033906", "payload": {"customer_id": "CUST0018", "session_id": 2157, "channel": "web_portal", "payment_amount": 68.06}}
+{"event_type": "incentive_claim", "event_time": "2025-05-30T22:33:33.033906", "payload": {"customer_id": "CUST0034", "session_id": 4043, "channel": "mobile_app", "tariff_type": "green"}}
+{"event_type": "incentive_claim", "event_time": "2025-06-03T00:46:33.033906", "payload": {"customer_id": "CUST0023", "session_id": 2125, "channel": "mobile_app", "tariff_type": "green"}}
+{"event_type": "user_logout", "event_time": "2025-06-03T22:52:33.033906", "payload": {"customer_id": "CUST0020", "session_id": 3204, "channel": "web_portal"}}
+{"event_type": "user_logout", "event_time": "2025-06-05T17:34:33.033906", "payload": {"customer_id": "CUST0022", "session_id": 3042, "channel": "web_portal"}}
+{"event_type": "tariff_switch", "event_time": "2025-06-05T03:05:33.033906", "payload": {"customer_id": "CUST0022", "session_id": 2699, "channel": "mobile_app", "tariff_type": "green"}}
+{"event_type": "energy_consumed", "event_time": "2025-06-03T08:55:33.033906", "payload": {"customer_id": "CUST0010", "session_id": 1325, "channel": "mobile_app", "energy_consumed": 49.783}}
+{"event_type": "tariff_switch", "event_time": "2025-06-04T01:08:33.033906", "payload": {"customer_id": "CUST0007", "session_id": 3612, "channel": "mobile_app", "tariff_type": "green"}}
+{"event_type": "incentive_claim", "event_time": "2025-06-04T13:48:33.033906", "payload": {"customer_id": "CUST0041", "session_id": 1946, "channel": "web_portal", "tariff_type": "green"}}
+{"event_type": "energy_consumed", "event_time": "2025-06-04T02:56:33.033906", "payload": {"customer_id": "CUST0021", "session_id": 4124, "channel": "call_center", "energy_consumed": 22.372}}
+{"event_type": "user_login", "event_time": "2025-06-03T17:49:33.033906", "payload": {"customer_id": "CUST0041", "session_id": 3766, "channel": "mobile_app"}}
+{"event_type": "user_logout", "event_time": "2025-06-05T21:07:33.033906", "payload": {"customer_id": "CUST0031", "session_id": 1268, "channel": "web_portal"}}
+{"event_type": "user_login", "event_time": "2025-06-05T12:08:33.033906", "payload": {"customer_id": "CUST0006", "session_id": 1355, "channel": "mobile_app"}}
+{"event_type": "incentive_claim", "event_time": "2025-06-03T08:42:33.033906", "payload": {"customer_id": "CUST0019", "session_id": 2721, "channel": "call_center", "tariff_type": "green"}}
+{"event_type": "incentive_claim", "event_time": "2025-05-30T10:55:33.033906", "payload": {"customer_id": "CUST0046", "session_id": 4076, "channel": "call_center", "tariff_type": "green"}}
+{"event_type": "user_login", "event_time": "2025-06-03T20:49:33.033906", "payload": {"customer_id": "CUST0006", "session_id": 1110, "channel": "call_center"}}
+{"event_type": "energy_consumed", "event_time": "2025-06-04T10:54:33.033906", "payload": {"customer_id": "CUST0045", "session_id": 2097, "channel": "mobile_app", "energy_consumed": 21.961}}
+{"event_type": "bill_payment", "event_time": "2025-05-30T05:38:33.033906", "payload": {"customer_id": "CUST0050", "session_id": 4508, "channel": "call_center", "payment_amount": 124.96}}
+{"event_type": "user_login", "event_time": "2025-06-02T00:29:33.033906", "payload": {"customer_id": "CUST0040", "session_id": 1948, "channel": "call_center"}}
+{"event_type": "tariff_switch", "event_time": "2025-05-31T16:43:33.033906", "payload": {"customer_id": "CUST0018", "session_id": 3532, "channel": "mobile_app", "tariff_type": "basic"}}
+{"event_type": "user_login", "event_time": "2025-05-31T04:00:33.033906", "payload": {"customer_id": "CUST0004", "session_id": 2496, "channel": "call_center"}}
+{"event_type": "energy_consumed", "event_time": "2025-05-31T19:53:33.033906", "payload": {"customer_id": "CUST0032", "session_id": 3825, "channel": "web_portal", "energy_consumed": 25.537}}
+{"event_type": "tariff_switch", "event_time": "2025-05-30T04:47:33.033906", "payload": {"customer_id": "CUST0036", "session_id": 4562, "channel": "web_portal", "tariff_type": "premium"}}
+{"event_type": "view_tariffs", "event_time": "2025-06-02T20:02:33.033906", "payload": {"customer_id": "CUST0014", "session_id": 3223, "channel": "web_portal", "tariff_type": "basic"}}
+{"event_type": "energy_consumed", "event_time": "2025-06-03T17:29:33.033906", "payload": {"customer_id": "CUST0048", "session_id": 2258, "channel": "call_center", "energy_consumed": 26.433}}
+{"event_type": "user_logout", "event_time": "2025-06-02T12:24:33.033906", "payload": {"customer_id": "CUST0038", "session_id": 4012, "channel": "call_center"}}
+{"event_type": "bill_payment", "event_time": "2025-05-30T15:05:33.033906", "payload": {"customer_id": "CUST0006", "session_id": 4678, "channel": "call_center", "payment_amount": 195.03}}
+{"event_type": "bill_payment", "event_time": "2025-05-31T15:22:33.033906", "payload": {"customer_id": "CUST0030", "session_id": 3942, "channel": "mobile_app", "payment_amount": 190.15}}
+{"event_type": "energy_consumed", "event_time": "2025-06-04T07:57:33.033906", "payload": {"customer_id": "CUST0040", "session_id": 1137, "channel": "web_portal", "energy_consumed": 7.4}}
+{"event_type": "user_logout", "event_time": "2025-06-01T06:22:33.033906", "payload": {"customer_id": "CUST0050", "session_id": 3509, "channel": "call_center"}}
+{"event_type": "tariff_switch", "event_time": "2025-05-31T19:00:33.033906", "payload": {"customer_id": "CUST0040", "session_id": 1420, "channel": "web_portal", "tariff_type": "premium"}}
+{"event_type": "user_logout", "event_time": "2025-05-31T10:30:33.033906", "payload": {"customer_id": "CUST0027", "session_id": 3051, "channel": "mobile_app"}}
+{"event_type": "bill_payment", "event_time": "2025-06-03T08:11:33.033906", "payload": {"customer_id": "CUST0021", "session_id": 2047, "channel": "web_portal", "payment_amount": 162.02}}
+{"event_type": "user_logout", "event_time": "2025-05-31T01:52:33.033906", "payload": {"customer_id": "CUST0038", "session_id": 4764, "channel": "mobile_app"}}
+{"event_type": "user_logout", "event_time": "2025-05-31T22:16:33.033906", "payload": {"customer_id": "CUST0009", "session_id": 3021, "channel": "call_center"}}
+{"event_type": "tariff_switch", "event_time": "2025-06-05T12:47:33.033906", "payload": {"customer_id": "CUST0003", "session_id": 2637, "channel": "call_center", "tariff_type": "green"}}
+{"event_type": "view_tariffs", "event_time": "2025-06-04T08:05:33.033906", "payload": {"customer_id": "CUST0039", "session_id": 4587, "channel": "web_portal", "tariff_type": "basic"}}
+{"event_type": "user_login", "event_time": "2025-05-30T12:50:33.033906", "payload": {"customer_id": "CUST0026", "session_id": 4432, "channel": "call_center"}}
+{"event_type": "user_login", "event_time": "2025-06-01T12:09:33.033906", "payload": {"customer_id": "CUST0040", "session_id": 2881, "channel": "call_center"}}
+{"event_type": "user_logout", "event_time": "2025-05-31T15:40:33.033906", "payload": {"customer_id": "CUST0032", "session_id": 4595, "channel": "web_portal"}}
+{"event_type": "incentive_claim", "event_time": "2025-05-31T08:16:33.033906", "payload": {"customer_id": "CUST0031", "session_id": 1143, "channel": "web_portal", "tariff_type": "green"}}
+{"event_type": "bill_payment", "event_time": "2025-06-02T17:07:33.033906", "payload": {"customer_id": "CUST0012", "session_id": 4207, "channel": "web_portal", "payment_amount": 38.77}}
+{"event_type": "tariff_switch", "event_time": "2025-06-02T12:35:33.033906", "payload": {"customer_id": "CUST0045", "session_id": 1654, "channel": "web_portal", "tariff_type": "green"}}
+{"event_type": "bill_payment", "event_time": "2025-06-04T16:28:33.033906", "payload": {"customer_id": "CUST0047", "session_id": 4568, "channel": "call_center", "payment_amount": 71.87}}
+{"event_type": "energy_consumed", "event_time": "2025-06-02T18:29:33.033906", "payload": {"customer_id": "CUST0048", "session_id": 1341, "channel": "web_portal", "energy_consumed": 26.869}}
+{"event_type": "view_tariffs", "event_time": "2025-06-01T22:29:33.033906", "payload": {"customer_id": "CUST0040", "session_id": 4053, "channel": "mobile_app", "tariff_type": "premium"}}
+{"event_type": "view_tariffs", "event_time": "2025-05-30T18:08:33.033906", "payload": {"customer_id": "CUST0050", "session_id": 4663, "channel": "web_portal", "tariff_type": "basic"}}
+{"event_type": "incentive_claim", "event_time": "2025-06-03T05:26:33.033906", "payload": {"customer_id": "CUST0012", "session_id": 3694, "channel": "web_portal", "tariff_type": "green"}}
+{"event_type": "tariff_switch", "event_time": "2025-05-31T05:44:33.033906", "payload": {"customer_id": "CUST0007", "session_id": 2799, "channel": "mobile_app", "tariff_type": "premium"}}
+{"event_type": "view_tariffs", "event_time": "2025-06-03T11:38:33.033906", "payload": {"customer_id": "CUST0010", "session_id": 1939, "channel": "web_portal", "tariff_type": "premium"}}
+{"event_type": "user_login", "event_time": "2025-06-03T10:46:33.033906", "payload": {"customer_id": "CUST0029", "session_id": 3250, "channel": "call_center"}}
+{"event_type": "energy_consumed", "event_time": "2025-05-31T22:30:33.033906", "payload": {"customer_id": "CUST0008", "session_id": 3008, "channel": "call_center", "energy_consumed": 7.777}}
+{"event_type": "view_tariffs", "event_time": "2025-06-04T01:06:33.033906", "payload": {"customer_id": "CUST0017", "session_id": 3266, "channel": "web_portal", "tariff_type": "premium"}}
+{"event_type": "view_tariffs", "event_time": "2025-06-01T22:33:33.033906", "payload": {"customer_id": "CUST0023", "session_id": 4978, "channel": "web_portal", "tariff_type": "green"}}
+{"event_type": "bill_payment", "event_time": "2025-06-05T15:50:33.033906", "payload": {"customer_id": "CUST0023", "session_id": 3953, "channel": "mobile_app", "payment_amount": 103.16}}
+{"event_type": "bill_payment", "event_time": "2025-06-02T15:00:33.033906", "payload": {"customer_id": "CUST0025", "session_id": 2001, "channel": "web_portal", "payment_amount": 139.62}}
+{"event_type": "incentive_claim", "event_time": "2025-06-05T00:38:33.033906", "payload": {"customer_id": "CUST0043", "session_id": 1012, "channel": "mobile_app", "tariff_type": "green"}}
+{"event_type": "tariff_switch", "event_time": "2025-05-31T16:33:33.033906", "payload": {"customer_id": "CUST0022", "session_id": 3156, "channel": "web_portal", "tariff_type": "basic"}}
+{"event_type": "tariff_switch", "event_time": "2025-06-03T05:33:33.033906", "payload": {"customer_id": "CUST0048", "session_id": 1104, "channel": "mobile_app", "tariff_type": "premium"}}
+{"event_type": "energy_consumed", "event_time": "2025-06-05T13:24:33.033906", "payload": {"customer_id": "CUST0038", "session_id": 3379, "channel": "call_center", "energy_consumed": 22.93}}
+{"event_type": "view_tariffs", "event_time": "2025-06-01T03:13:33.033906", "payload": {"customer_id": "CUST0031", "session_id": 2687, "channel": "mobile_app", "tariff_type": "basic"}}
+{"event_type": "view_tariffs", "event_time": "2025-06-04T19:49:33.033906", "payload": {"customer_id": "CUST0009", "session_id": 3512, "channel": "mobile_app", "tariff_type": "green"}}
+{"event_type": "bill_payment", "event_time": "2025-06-05T18:37:33.033906", "payload": {"customer_id": "CUST0034", "session_id": 3328, "channel": "mobile_app", "payment_amount": 83.94}}
+{"event_type": "tariff_switch", "event_time": "2025-06-02T05:32:33.033906", "payload": {"customer_id": "CUST0007", "session_id": 3828, "channel": "mobile_app", "tariff_type": "premium"}}
+{"event_type": "view_tariffs", "event_time": "2025-05-30T00:26:33.033906", "payload": {"customer_id": "CUST0013", "session_id": 2262, "channel": "mobile_app", "tariff_type": "basic"}}
+{"event_type": "view_tariffs", "event_time": "2025-06-05T17:21:33.033906", "payload": {"customer_id": "CUST0037", "session_id": 1728, "channel": "call_center", "tariff_type": "basic"}}
+{"event_type": "view_tariffs", "event_time": "2025-06-02T22:41:33.033906", "payload": {"customer_id": "CUST0010", "session_id": 4050, "channel": "mobile_app", "tariff_type": "basic"}}
+{"event_type": "user_login", "event_time": "2025-05-31T19:10:33.033906", "payload": {"customer_id": "CUST0010", "session_id": 4488, "channel": "mobile_app"}}
+{"event_type": "incentive_claim", "event_time": "2025-06-02T05:38:33.033906", "payload": {"customer_id": "CUST0013", "session_id": 4923, "channel": "mobile_app", "tariff_type": "green"}}
+{"event_type": "incentive_claim", "event_time": "2025-05-30T09:53:33.033906", "payload": {"customer_id": "CUST0003", "session_id": 4737, "channel": "call_center", "tariff_type": "green"}}
+{"event_type": "user_login", "event_time": "2025-06-03T22:24:33.033906", "payload": {"customer_id": "CUST0009", "session_id": 3840, "channel": "mobile_app"}}
+{"event_type": "tariff_switch", "event_time": "2025-05-31T15:30:33.033906", "payload": {"customer_id": "CUST0018", "session_id": 3334, "channel": "mobile_app", "tariff_type": "green"}}
+{"event_type": "view_tariffs", "event_time": "2025-06-04T23:06:33.033906", "payload": {"customer_id": "CUST0036", "session_id": 2861, "channel": "web_portal", "tariff_type": "green"}}
+{"event_type": "energy_consumed", "event_time": "2025-05-30T17:55:33.033906", "payload": {"customer_id": "CUST0035", "session_id": 3205, "channel": "web_portal", "energy_consumed": 22.075}}
+{"event_type": "view_tariffs", "event_time": "2025-06-03T03:34:33.033906", "payload": {"customer_id": "CUST0044", "session_id": 4209, "channel": "call_center", "tariff_type": "green"}}
+{"event_type": "energy_consumed", "event_time": "2025-05-29T22:49:33.033906", "payload": {"customer_id": "CUST0007", "session_id": 2865, "channel": "call_center", "energy_consumed": 31.696}}
+{"event_type": "view_tariffs", "event_time": "2025-06-04T03:56:33.033906", "payload": {"customer_id": "CUST0047", "session_id": 1537, "channel": "web_portal", "tariff_type": "premium"}}
+{"event_type": "incentive_claim", "event_time": "2025-06-01T08:31:33.033906", "payload": {"customer_id": "CUST0028", "session_id": 3483, "channel": "web_portal", "tariff_type": "green"}}
+{"event_type": "bill_payment", "event_time": "2025-06-02T12:46:33.033906", "payload": {"customer_id": "CUST0038", "session_id": 3908, "channel": "call_center", "payment_amount": 123.78}}
+{"event_type": "tariff_switch", "event_time": "2025-06-04T19:59:33.033906", "payload": {"customer_id": "CUST0029", "session_id": 2274, "channel": "mobile_app", "tariff_type": "basic"}}
+{"event_type": "energy_consumed", "event_time": "2025-06-04T16:48:33.033906", "payload": {"customer_id": "CUST0022", "session_id": 3399, "channel": "web_portal", "energy_consumed": 1.369}}
+{"event_type": "user_logout", "event_time": "2025-05-30T14:13:33.033906", "payload": {"customer_id": "CUST0041", "session_id": 3112, "channel": "call_center"}}
+{"event_type": "view_tariffs", "event_time": "2025-06-04T09:52:33.033906", "payload": {"customer_id": "CUST0043", "session_id": 3918, "channel": "mobile_app", "tariff_type": "green"}}
+{"event_type": "user_logout", "event_time": "2025-06-02T17:54:33.033906", "payload": {"customer_id": "CUST0005", "session_id": 4463, "channel": "call_center"}}
+{"event_type": "incentive_claim", "event_time": "2025-05-30T23:11:33.033906", "payload": {"customer_id": "CUST0036", "session_id": 4458, "channel": "mobile_app", "tariff_type": "green"}}
+{"event_type": "view_tariffs", "event_time": "2025-06-05T05:12:33.033906", "payload": {"customer_id": "CUST0020", "session_id": 3829, "channel": "web_portal", "tariff_type": "basic"}}
+{"event_type": "incentive_claim", "event_time": "2025-05-31T19:41:33.033906", "payload": {"customer_id": "CUST0018", "session_id": 1736, "channel": "web_portal", "tariff_type": "green"}}
+{"event_type": "incentive_claim", "event_time": "2025-06-02T05:08:33.033906", "payload": {"customer_id": "CUST0019", "session_id": 1913, "channel": "web_portal", "tariff_type": "green"}}
+{"event_type": "tariff_switch", "event_time": "2025-06-04T13:25:33.033906", "payload": {"customer_id": "CUST0026", "session_id": 2567, "channel": "web_portal", "tariff_type": "green"}}
+{"event_type": "user_logout", "event_time": "2025-06-02T14:16:33.033906", "payload": {"customer_id": "CUST0049", "session_id": 1486, "channel": "mobile_app"}}
+{"event_type": "user_logout", "event_time": "2025-06-03T20:43:33.033906", "payload": {"customer_id": "CUST0048", "session_id": 4745, "channel": "call_center"}}
+{"event_type": "tariff_switch", "event_time": "2025-05-30T06:58:33.033906", "payload": {"customer_id": "CUST0032", "session_id": 2118, "channel": "web_portal", "tariff_type": "premium"}}
+{"event_type": "bill_payment", "event_time": "2025-06-01T13:52:33.033906", "payload": {"customer_id": "CUST0011", "session_id": 3162, "channel": "call_center", "payment_amount": 198.21}}
+{"event_type": "user_login", "event_time": "2025-05-31T20:57:33.033906", "payload": {"customer_id": "CUST0004", "session_id": 2096, "channel": "mobile_app"}}
+{"event_type": "user_logout", "event_time": "2025-05-31T09:43:33.033906", "payload": {"customer_id": "CUST0015", "session_id": 4138, "channel": "web_portal"}}
+{"event_type": "incentive_claim", "event_time": "2025-06-03T16:09:33.033906", "payload": {"customer_id": "CUST0009", "session_id": 4091, "channel": "web_portal", "tariff_type": "green"}}
+{"event_type": "energy_consumed", "event_time": "2025-06-03T18:04:33.033906", "payload": {"customer_id": "CUST0031", "session_id": 4919, "channel": "call_center", "energy_consumed": 31.457}}
+{"event_type": "user_logout", "event_time": "2025-06-04T12:34:33.033906", "payload": {"customer_id": "CUST0028", "session_id": 2052, "channel": "mobile_app"}}
+{"event_type": "bill_payment", "event_time": "2025-06-03T09:51:33.033906", "payload": {"customer_id": "CUST0001", "session_id": 1864, "channel": "web_portal", "payment_amount": 82.95}}
+{"event_type": "tariff_switch", "event_time": "2025-05-31T17:32:33.033906", "payload": {"customer_id": "CUST0013", "session_id": 2312, "channel": "web_portal", "tariff_type": "premium"}}
+{"event_type": "incentive_claim", "event_time": "2025-05-31T14:38:33.033906", "payload": {"customer_id": "CUST0005", "session_id": 1996, "channel": "web_portal", "tariff_type": "green"}}
+{"event_type": "user_logout", "event_time": "2025-06-01T22:35:33.033906", "payload": {"customer_id": "CUST0045", "session_id": 3251, "channel": "call_center"}}
+{"event_type": "user_login", "event_time": "2025-05-31T02:09:33.033906", "payload": {"customer_id": "CUST0013", "session_id": 1537, "channel": "mobile_app"}}
+{"event_type": "bill_payment", "event_time": "2025-06-03T12:42:33.033906", "payload": {"customer_id": "CUST0022", "session_id": 4231, "channel": "call_center", "payment_amount": 101.11}}
+{"event_type": "incentive_claim", "event_time": "2025-06-01T09:41:33.033906", "payload": {"customer_id": "CUST0012", "session_id": 1576, "channel": "web_portal", "tariff_type": "green"}}
+{"event_type": "user_login", "event_time": "2025-05-30T02:55:33.033906", "payload": {"customer_id": "CUST0027", "session_id": 4290, "channel": "mobile_app"}}
+{"event_type": "bill_payment", "event_time": "2025-06-04T23:28:33.033906", "payload": {"customer_id": "CUST0024", "session_id": 2860, "channel": "web_portal", "payment_amount": 44.74}}
+{"event_type": "tariff_switch", "event_time": "2025-05-29T23:43:33.033906", "payload": {"customer_id": "CUST0032", "session_id": 1972, "channel": "call_center", "tariff_type": "premium"}}
+{"event_type": "view_tariffs", "event_time": "2025-06-05T18:11:33.033906", "payload": {"customer_id": "CUST0001", "session_id": 3805, "channel": "mobile_app", "tariff_type": "basic"}}
+{"event_type": "view_tariffs", "event_time": "2025-05-31T00:32:33.033906", "payload": {"customer_id": "CUST0031", "session_id": 4075, "channel": "web_portal", "tariff_type": "basic"}}
+{"event_type": "user_login", "event_time": "2025-06-03T15:59:33.033906", "payload": {"customer_id": "CUST0026", "session_id": 1235, "channel": "web_portal"}}
+{"event_type": "bill_payment", "event_time": "2025-06-01T17:23:33.033906", "payload": {"customer_id": "CUST0031", "session_id": 3096, "channel": "mobile_app", "payment_amount": 66.73}}
+{"event_type": "bill_payment", "event_time": "2025-06-05T07:14:33.033906", "payload": {"customer_id": "CUST0025", "session_id": 3201, "channel": "call_center", "payment_amount": 152.05}}
+{"event_type": "incentive_claim", "event_time": "2025-06-01T12:09:33.033906", "payload": {"customer_id": "CUST0049", "session_id": 2645, "channel": "mobile_app", "tariff_type": "green"}}
+{"event_type": "user_login", "event_time": "2025-05-30T10:04:33.033906", "payload": {"customer_id": "CUST0018", "session_id": 4920, "channel": "mobile_app"}}
+{"event_type": "incentive_claim", "event_time": "2025-06-05T17:24:33.033906", "payload": {"customer_id": "CUST0005", "session_id": 2879, "channel": "call_center", "tariff_type": "green"}}
+{"event_type": "view_tariffs", "event_time": "2025-06-01T02:15:33.033906", "payload": {"customer_id": "CUST0016", "session_id": 1063, "channel": "call_center", "tariff_type": "premium"}}
+{"event_type": "view_tariffs", "event_time": "2025-06-01T18:51:33.033906", "payload": {"customer_id": "CUST0003", "session_id": 3069, "channel": "web_portal", "tariff_type": "green"}}
+{"event_type": "incentive_claim", "event_time": "2025-05-30T16:15:33.033906", "payload": {"customer_id": "CUST0050", "session_id": 3240, "channel": "web_portal", "tariff_type": "green"}}
+{"event_type": "energy_consumed", "event_time": "2025-06-02T01:44:33.033906", "payload": {"customer_id": "CUST0012", "session_id": 3600, "channel": "call_center", "energy_consumed": 11.842}}
+{"event_type": "incentive_claim", "event_time": "2025-05-30T15:10:33.033906", "payload": {"customer_id": "CUST0029", "session_id": 2296, "channel": "web_portal", "tariff_type": "green"}}
+{"event_type": "bill_payment", "event_time": "2025-06-03T11:11:33.033906", "payload": {"customer_id": "CUST0045", "session_id": 1175, "channel": "web_portal", "payment_amount": 148.75}}
+{"event_type": "energy_consumed", "event_time": "2025-06-02T10:30:33.033906", "payload": {"customer_id": "CUST0012", "session_id": 4890, "channel": "mobile_app", "energy_consumed": 29.878}}
+{"event_type": "view_tariffs", "event_time": "2025-06-02T16:40:33.033906", "payload": {"customer_id": "CUST0031", "session_id": 4762, "channel": "call_center", "tariff_type": "basic"}}
+{"event_type": "user_logout", "event_time": "2025-05-31T00:41:33.033906", "payload": {"customer_id": "CUST0042", "session_id": 2918, "channel": "call_center"}}
+{"event_type": "tariff_switch", "event_time": "2025-06-04T04:00:33.033906", "payload": {"customer_id": "CUST0036", "session_id": 4471, "channel": "call_center", "tariff_type": "green"}}
+{"event_type": "user_login", "event_time": "2025-06-01T07:41:33.033906", "payload": {"customer_id": "CUST0017", "session_id": 3129, "channel": "call_center"}}
+{"event_type": "bill_payment", "event_time": "2025-05-30T07:09:33.033906", "payload": {"customer_id": "CUST0001", "session_id": 2872, "channel": "web_portal", "payment_amount": 40.24}}
+{"event_type": "tariff_switch", "event_time": "2025-05-29T22:02:33.033906", "payload": {"customer_id": "CUST0021", "session_id": 4128, "channel": "web_portal", "tariff_type": "premium"}}
+{"event_type": "incentive_claim", "event_time": "2025-05-30T10:47:33.033906", "payload": {"customer_id": "CUST0016", "session_id": 1375, "channel": "mobile_app", "tariff_type": "green"}}
+{"event_type": "bill_payment", "event_time": "2025-05-30T01:30:33.033906", "payload": {"customer_id": "CUST0014", "session_id": 3911, "channel": "call_center", "payment_amount": 110.62}}
+{"event_type": "view_tariffs", "event_time": "2025-06-01T08:04:33.033906", "payload": {"customer_id": "CUST0034", "session_id": 4512, "channel": "web_portal", "tariff_type": "basic"}}
+{"event_type": "bill_payment", "event_time": "2025-05-30T17:57:33.033906", "payload": {"customer_id": "CUST0050", "session_id": 1210, "channel": "mobile_app", "payment_amount": 140.82}}
+{"event_type": "user_login", "event_time": "2025-06-01T19:14:33.033906", "payload": {"customer_id": "CUST0041", "session_id": 1638, "channel": "call_center"}}
+{"event_type": "user_login", "event_time": "2025-06-05T09:10:33.033906", "payload": {"customer_id": "CUST0039", "session_id": 2408, "channel": "web_portal"}}
+{"event_type": "user_login", "event_time": "2025-05-31T18:04:33.033906", "payload": {"customer_id": "CUST0037", "session_id": 2268, "channel": "web_portal"}}
+{"event_type": "incentive_claim", "event_time": "2025-05-31T15:31:33.033906", "payload": {"customer_id": "CUST0019", "session_id": 2794, "channel": "web_portal", "tariff_type": "green"}}
+{"event_type": "user_logout", "event_time": "2025-06-05T21:26:33.033906", "payload": {"customer_id": "CUST0011", "session_id": 1721, "channel": "call_center"}}
+{"event_type": "energy_consumed", "event_time": "2025-06-01T13:04:33.033906", "payload": {"customer_id": "CUST0011", "session_id": 2707, "channel": "call_center", "energy_consumed": 9.229}}
+{"event_type": "view_tariffs", "event_time": "2025-05-31T03:10:33.033906", "payload": {"customer_id": "CUST0017", "session_id": 2843, "channel": "call_center", "tariff_type": "green"}}
+{"event_type": "user_login", "event_time": "2025-05-29T23:44:33.033906", "payload": {"customer_id": "CUST0049", "session_id": 1952, "channel": "call_center"}}
+{"event_type": "view_tariffs", "event_time": "2025-06-01T06:56:33.033906", "payload": {"customer_id": "CUST0020", "session_id": 2438, "channel": "call_center", "tariff_type": "basic"}}
+{"event_type": "incentive_claim", "event_time": "2025-06-01T10:45:33.033906", "payload": {"customer_id": "CUST0022", "session_id": 4104, "channel": "web_portal", "tariff_type": "green"}}
+{"event_type": "user_login", "event_time": "2025-06-05T03:06:33.033906", "payload": {"customer_id": "CUST0001", "session_id": 2069, "channel": "web_portal"}}
+{"event_type": "user_logout", "event_time": "2025-05-30T08:41:33.033906", "payload": {"customer_id": "CUST0011", "session_id": 2714, "channel": "web_portal"}}
+{"event_type": "energy_consumed", "event_time": "2025-05-30T15:52:33.033906", "payload": {"customer_id": "CUST0023", "session_id": 3107, "channel": "web_portal", "energy_consumed": 16.875}}
+{"event_type": "energy_consumed", "event_time": "2025-06-01T14:39:33.033906", "payload": {"customer_id": "CUST0046", "session_id": 2593, "channel": "mobile_app", "energy_consumed": 3.744}}
+{"event_type": "tariff_switch", "event_time": "2025-06-01T19:41:33.033906", "payload": {"customer_id": "CUST0015", "session_id": 2402, "channel": "call_center", "tariff_type": "premium"}}
+{"event_type": "energy_consumed", "event_time": "2025-06-04T19:21:33.033906", "payload": {"customer_id": "CUST0009", "session_id": 3020, "channel": "mobile_app", "energy_consumed": 24.109}}
+{"event_type": "tariff_switch", "event_time": "2025-05-30T07:44:33.033906", "payload": {"customer_id": "CUST0026", "session_id": 3224, "channel": "web_portal", "tariff_type": "basic"}}
+{"event_type": "user_login", "event_time": "2025-06-01T06:51:33.033906", "payload": {"customer_id": "CUST0021", "session_id": 4888, "channel": "web_portal"}}
+{"event_type": "user_login", "event_time": "2025-05-30T00:24:33.033906", "payload": {"customer_id": "CUST0020", "session_id": 2714, "channel": "call_center"}}
+{"event_type": "user_login", "event_time": "2025-06-02T02:00:33.033906", "payload": {"customer_id": "CUST0005", "session_id": 4283, "channel": "call_center"}}
+{"event_type": "user_login", "event_time": "2025-06-01T04:48:33.033906", "payload": {"customer_id": "CUST0031", "session_id": 2539, "channel": "mobile_app"}}
+{"event_type": "bill_payment", "event_time": "2025-06-04T19:12:33.033906", "payload": {"customer_id": "CUST0047", "session_id": 1839, "channel": "web_portal", "payment_amount": 138.92}}
+{"event_type": "view_tariffs", "event_time": "2025-06-04T00:55:33.033906", "payload": {"customer_id": "CUST0042", "session_id": 2102, "channel": "call_center", "tariff_type": "green"}}
+{"event_type": "energy_consumed", "event_time": "2025-05-31T09:19:33.033906", "payload": {"customer_id": "CUST0001", "session_id": 3814, "channel": "web_portal", "energy_consumed": 10.726}}
+{"event_type": "user_logout", "event_time": "2025-06-01T02:52:33.033906", "payload": {"customer_id": "CUST0001", "session_id": 4197, "channel": "mobile_app"}}
+{"event_type": "user_login", "event_time": "2025-06-05T14:28:33.033906", "payload": {"customer_id": "CUST0038", "session_id": 2017, "channel": "web_portal"}}
+{"event_type": "user_login", "event_time": "2025-06-01T08:36:33.033906", "payload": {"customer_id": "CUST0007", "session_id": 3231, "channel": "call_center"}}
+{"event_type": "user_logout", "event_time": "2025-06-02T02:56:33.033906", "payload": {"customer_id": "CUST0001", "session_id": 1489, "channel": "web_portal"}}
+{"event_type": "bill_payment", "event_time": "2025-06-05T20:51:33.033906", "payload": {"customer_id": "CUST0050", "session_id": 3202, "channel": "web_portal", "payment_amount": 114.68}}
+{"event_type": "user_login", "event_time": "2025-06-02T15:29:33.033906", "payload": {"customer_id": "CUST0007", "session_id": 1645, "channel": "mobile_app"}}
+{"event_type": "user_logout", "event_time": "2025-06-03T08:27:33.033906", "payload": {"customer_id": "CUST0021", "session_id": 4250, "channel": "call_center"}}
+{"event_type": "energy_consumed", "event_time": "2025-06-02T16:54:33.033906", "payload": {"customer_id": "CUST0029", "session_id": 2190, "channel": "call_center", "energy_consumed": 35.875}}
+{"event_type": "tariff_switch", "event_time": "2025-06-04T19:40:33.033906", "payload": {"customer_id": "CUST0020", "session_id": 2096, "channel": "mobile_app", "tariff_type": "premium"}}
+{"event_type": "user_logout", "event_time": "2025-06-02T06:51:33.033906", "payload": {"customer_id": "CUST0020", "session_id": 1692, "channel": "mobile_app"}}
+{"event_type": "bill_payment", "event_time": "2025-06-03T02:23:33.033906", "payload": {"customer_id": "CUST0003", "session_id": 2916, "channel": "mobile_app", "payment_amount": 17.96}}
+{"event_type": "user_login", "event_time": "2025-05-30T22:38:33.033906", "payload": {"customer_id": "CUST0044", "session_id": 2483, "channel": "web_portal"}}
+{"event_type": "incentive_claim", "event_time": "2025-06-04T16:05:33.033906", "payload": {"customer_id": "CUST0014", "session_id": 1474, "channel": "web_portal", "tariff_type": "green"}}
+{"event_type": "bill_payment", "event_time": "2025-05-31T04:45:33.033906", "payload": {"customer_id": "CUST0033", "session_id": 2090, "channel": "web_portal", "payment_amount": 39.74}}
+{"event_type": "user_login", "event_time": "2025-06-02T14:44:33.033906", "payload": {"customer_id": "CUST0010", "session_id": 4111, "channel": "call_center"}}
+{"event_type": "bill_payment", "event_time": "2025-05-30T15:16:33.033906", "payload": {"customer_id": "CUST0011", "session_id": 2232, "channel": "call_center", "payment_amount": 29.18}}
+{"event_type": "tariff_switch", "event_time": "2025-06-02T08:46:33.033906", "payload": {"customer_id": "CUST0037", "session_id": 2957, "channel": "call_center", "tariff_type": "green"}}
+{"event_type": "tariff_switch", "event_time": "2025-06-05T02:11:33.033906", "payload": {"customer_id": "CUST0012", "session_id": 4360, "channel": "web_portal", "tariff_type": "basic"}}
+{"event_type": "tariff_switch", "event_time": "2025-06-01T03:59:33.033906", "payload": {"customer_id": "CUST0029", "session_id": 3366, "channel": "call_center", "tariff_type": "green"}}
+{"event_type": "tariff_switch", "event_time": "2025-06-03T18:47:33.033906", "payload": {"customer_id": "CUST0011", "session_id": 2899, "channel": "web_portal", "tariff_type": "basic"}}
+{"event_type": "energy_consumed", "event_time": "2025-06-03T05:48:33.033906", "payload": {"customer_id": "CUST0012", "session_id": 2384, "channel": "web_portal", "energy_consumed": 12.461}}
+{"event_type": "tariff_switch", "event_time": "2025-05-30T13:52:33.033906", "payload": {"customer_id": "CUST0048", "session_id": 3404, "channel": "mobile_app", "tariff_type": "premium"}}
+{"event_type": "view_tariffs", "event_time": "2025-06-05T13:35:33.033906", "payload": {"customer_id": "CUST0016", "session_id": 1668, "channel": "web_portal", "tariff_type": "basic"}}
+{"event_type": "incentive_claim", "event_time": "2025-05-30T03:56:33.033906", "payload": {"customer_id": "CUST0015", "session_id": 1958, "channel": "call_center", "tariff_type": "green"}}
+{"event_type": "view_tariffs", "event_time": "2025-06-02T06:58:33.033906", "payload": {"customer_id": "CUST0026", "session_id": 4531, "channel": "call_center", "tariff_type": "green"}}
+{"event_type": "tariff_switch", "event_time": "2025-06-05T17:08:33.033906", "payload": {"customer_id": "CUST0039", "session_id": 2450, "channel": "mobile_app", "tariff_type": "basic"}}
+{"event_type": "user_logout", "event_time": "2025-05-31T19:18:33.033906", "payload": {"customer_id": "CUST0010", "session_id": 3849, "channel": "web_portal"}}

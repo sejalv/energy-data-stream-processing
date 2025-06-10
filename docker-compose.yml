@@ -56,14 +56,17 @@ services:
     image: grafana/grafana
     depends_on:
       - prometheus
+      - postgres
     ports:
       - "3000:3000"
     environment:
       - GF_SECURITY_ADMIN_USER=admin
       - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_INSTALL_PLUGINS=grafana-clock-panel,grafana-simple-json-datasource
     volumes:
       - ./monitoring/grafana/provisioning:/etc/grafana/provisioning
       - ./monitoring/grafana/dashboards:/var/lib/grafana/dashboards
+      - grafana-storage:/var/lib/grafana
 
   producer:
     build:
@@ -76,7 +79,7 @@ services:
         condition: service_healthy
     environment:
       BOOTSTRAP_SERVERS: kafka:9092
-    command: python ./producer/producer.py
+    command: python ./producer/producer.py --file data/events.jsonl --error_file data/bad_events.log
     volumes:
       - ./producer:/app/producer
       - ./data:/app/data
@@ -98,10 +101,11 @@ services:
       POSTGRES_USER: user
       POSTGRES_PASSWORD: password
       POSTGRES_DB: events_db
-    command: python ./consumer/consumer.py --file data/events.jsonl --error_file data/bad_events.log
+    command: python ./consumer/consumer.py
     volumes:
       - ./consumer:/app/consumer
       - ./data:/app/data
 
 volumes:
   pgdata:
+  grafana-storage:

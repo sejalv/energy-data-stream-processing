@@ -1,18 +1,23 @@
 {
   "id": null,
   "uid": "data-ops-dashboard",
-  "title": "Kafka Metrics",
+  "title": "Kafka & DB Metrics",
   "tags": ["consumer", "producer","prometheus"],
   "timezone": "browser",
   "schemaVersion": 37,
   "version": 1,
   "refresh": "5s",
+  "time": {
+    "from": "now-15m",
+    "to": "now"
+  },
   "panels": [
     {
       "type": "stat",
       "title": "Producer Events Sent (Success)",
       "id": 1,
       "gridPos": { "h": 5, "w": 8, "x": 0, "y": 0 },
+      "datasource": "Prometheus",
       "targets": [
         {
           "expr": "producer_events_sent_total{status=\"success\"}",
@@ -20,13 +25,18 @@
           "refId": "A"
         }
       ],
-      "colorMode": "value",
-      "colors": ["green"],
-      "thresholds": {
-        "mode": "absolute",
-        "steps": [
-          { "color": "green", "value": null }
-        ]
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              { "color": "green", "value": null }
+            ]
+          }
+        }
       }
     },
     {
@@ -34,13 +44,29 @@
       "type": "stat",
       "id": 2,
       "gridPos": { "h": 5, "w": 8, "x": 0, "y": 5 },
+      "datasource": "Prometheus",
       "targets": [
         {
-          "expr": "producer_events_sent_total{status=\"failure\"}",
+          "expr": "producer_events_sent_total{status=\"failure\"} or on() vector(0)",
           "legendFormat": "Failure",
           "refId": "B"
         }
-      ]
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              { "color": "green", "value": null },
+              { "color": "orange", "value": 1 },
+              { "color": "red", "value": 10 }
+            ]
+          }
+        }
+      }
     },
     {
       "type": "stat",
@@ -50,17 +76,22 @@
       "datasource": "Prometheus",
       "targets": [
         {
-          "expr": "events_received_total{status=\"success\"}",
+          "expr": "consumer_events_processed_total{status=\"success\"}",
           "refId": "A"
         }
       ],
-      "colorMode": "value",
-      "colors": ["green"],
-      "thresholds": {
-        "mode": "absolute",
-        "steps": [
-          { "color": "green", "value": null }
-        ]
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              { "color": "green", "value": null }
+            ]
+          }
+        }
       }
     },
     {
@@ -71,33 +102,128 @@
       "datasource": "Prometheus",
       "targets": [
         {
-          "expr": "events_received_total{status=\"failure\"}",
+          "expr": "consumer_events_processed_total{status=\"failure\"} or on() vector(0)",
           "refId": "A"
         }
       ],
-      "colorMode": "value",
-      "colors": ["green", "orange", "red"],
-      "thresholds": {
-        "mode": "absolute",
-        "steps": [
-          { "color": "green", "value": null },
-          { "color": "orange", "value": 5 },
-          { "color": "red", "value": 20 }
-        ]
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              { "color": "green", "value": null },
+              { "color": "orange", "value": 5 },
+              { "color": "red", "value": 20 }
+            ]
+          }
+        }
       }
     },
     {
-      "type": "timeseries",
-      "title": "Consumer Events Processing Time (Histogram Average)",
+      "type": "stat",
+      "title": "Database Event Count",
       "id": 5,
       "gridPos": { "h": 5, "w": 8, "x": 16, "y": 0 },
       "datasource": "Prometheus",
       "targets": [
         {
-          "expr": "rate(event_processing_seconds_sum[1m]) / rate(event_processing_seconds_count[1m])",
+          "expr": "db_operations_total{operation=\"insert\",status=\"success\"}",
           "refId": "A"
         }
-      ]
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              { "color": "blue", "value": null }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "timeseries",
+      "title": "Database Operations",
+      "id": 6,
+      "gridPos": { "h": 5, "w": 8, "x": 16, "y": 5 },
+      "datasource": "Prometheus",
+      "targets": [
+        {
+          "expr": "rate(db_operations_total{operation=\"insert\",status=\"success\"}[1m])",
+          "legendFormat": "DB Insert Success Rate",
+          "refId": "A"
+        },
+        {
+          "expr": "rate(db_operations_total{operation=\"insert\",status=\"failure\"}[1m])",
+          "legendFormat": "DB Insert Failure Rate",
+          "refId": "B"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "reqps"
+        }
+      }
+    },
+    {
+      "type": "timeseries",
+      "title": "Event Processing Rate",
+      "id": 7,
+      "gridPos": { "h": 6, "w": 8, "x": 0, "y": 10 },
+      "datasource": "Prometheus",
+      "targets": [
+        {
+          "expr": "rate(producer_events_sent_total{status=\"success\"}[1m])",
+          "legendFormat": "Producer Success Rate",
+          "refId": "A"
+        },
+        {
+          "expr": "rate(consumer_events_processed_total{status=\"success\"}[1m])",
+          "legendFormat": "Consumer Success Rate",
+          "refId": "B"
+        },
+        {
+          "expr": "rate(db_operations_total{operation=\"insert\",status=\"success\"}[1m])",
+          "legendFormat": "DB Insert Rate",
+          "refId": "C"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "reqps"
+        }
+      }
+    },
+    {
+      "type": "timeseries",
+      "title": "Consumer Processing Latency",
+      "id": 8,
+       "gridPos": { "h": 6, "w": 8, "x": 8, "y": 10 },
+      "datasource": "Prometheus",
+      "targets": [
+        {
+          "expr": "rate(consumer_event_processing_latency_sum[1m]) / rate(consumer_event_processing_latency_count[1m])",
+          "legendFormat": "Average Latency",
+          "refId": "A"
+        },
+        {
+          "expr": "histogram_quantile(0.95, rate(consumer_event_processing_latency_bucket[1m]))",
+          "legendFormat": "95th Percentile",
+          "refId": "B"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "s"
+        }
+      }
     }
   ]
 }
