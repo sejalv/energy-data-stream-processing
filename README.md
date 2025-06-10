@@ -161,6 +161,7 @@ docker-compose up --build
 ```
 psql -h localhost -p 5432 -U user -d events_db
 [user: password]
+\d
 select * from ...;
 ```
 
