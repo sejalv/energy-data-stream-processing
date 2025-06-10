@@ -179,7 +179,7 @@ docker-compose logs [container]
 
 * Wait for a few seconds for the producer and consumer to start generating logs, from docker
 * While the metrics dashboards are updated in real-time, a lag of few records is to be expected
-* The BI dashboard is for representation purposes, and does not guarantee complete accuracy given the sample data
+* The BI dashboard is for representation purposes, and does not guarantee complete accuracy given the sample data provided
 
 
 **Final Logs (Producer)**
