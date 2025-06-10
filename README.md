@@ -63,7 +63,7 @@ This system implements a modern data architecture for energy business analytics 
 * Peak Load Management: Energy consumption heatmaps
 * A/B Testing Framework: Customer segment analysis and experimentation
 
-* ![dashboard-snapshot.png](./dashboard-snapshot.png)
+![dashboard-snapshot.png](./dashboard-snapshot.png)
 
 ### Observability Dashboards
 
