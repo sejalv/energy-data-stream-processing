@@ -100,7 +100,7 @@ PYTHONPATH=consumer pytest -sv tests/test_consumer.py
 docker-compose up --build
 ```
 
-4. Observability Dashboards:
+4. Dashboards:
 
 *	Prometheus: http://localhost:9090
 *	Grafana: http://localhost:3000 (Default login: `admin/admin`, and then skip password change)
