@@ -3,16 +3,8 @@
 A real-time streaming pipeline that captures energy consumption and tariff-switching events via Apache Kafka, 
 stores them in PostgreSQL, and exposes business intelligence and observability dashboards through Grafana.
 
-This project forms a foundational layer of a large-scale pricing infrastructure I contributed to while 
-building experimentation platforms for Pricing teams. It can power key use-cases like dynamic pricing, 
-demand elasticity modeling, and A/B test measurement through downstream services.
-
-## Overview
-
-This system implements a modern data architecture for energy business analytics to:
-
-* Track customer energy consumption in real-time
-* Measure customer engagement and revenue across tariff-switching and other lifecycle events
+This project represents a foundational layer of a large-scale pricing infrastructure that can power key use-cases like dynamic pricing, demand elasticity modeling, and A/B test measurement through downstream services.
+ther lifecycle events
 
 ### Tech
 
