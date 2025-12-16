@@ -4,7 +4,6 @@ A real-time streaming pipeline that captures energy consumption and tariff-switc
 stores them in PostgreSQL, and exposes business intelligence and observability dashboards through Grafana.
 
 This project represents a foundational layer of a large-scale pricing infrastructure that can power key use-cases like dynamic pricing, demand elasticity modeling, and A/B test measurement through downstream services.
-ther lifecycle events
 
 ### Tech
 
